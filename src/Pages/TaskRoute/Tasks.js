@@ -5,11 +5,11 @@ import Task from './Task';
 const Tasks = () => {
     const [tasks, setTasks] = useState([]);
     useEffect( () => {
-        fetch('http://localhost:5000/tasks')
+        fetch('https://boiling-tor-70886.herokuapp.com/tasks')
         .then(res =>  res.json())
         .then(data => setTasks(data))
     }, [])
-    
+
     return (
         <div>
             <div className='my-20'>

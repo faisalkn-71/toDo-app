@@ -11,7 +11,7 @@ const ToDo = () => {
             task: event.target.task.value,
         }
 
-        axios.post('http://localhost:5000/task', todo)
+        axios.post('https://boiling-tor-70886.herokuapp.com/task', todo)
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {

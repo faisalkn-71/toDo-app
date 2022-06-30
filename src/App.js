@@ -5,6 +5,7 @@ import CompletedTask from "./Pages/TaskRoute/CompletedTask";
 import Calender from "./Pages/TaskRoute/Calender";
 import './App.css';
 import Home from './Pages/TaskRoute/Home';
+import Footer from './Pages/Shared/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/completedTask' element={<CompletedTask></CompletedTask>}></Route>
         <Route path='/calender' element={<Calender></Calender>}></Route>
       </Routes>
+      <Footer></Footer>
       
     </div>
   );
